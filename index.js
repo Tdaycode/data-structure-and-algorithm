@@ -18,8 +18,6 @@ function containSameItem(arr1, arr2) {
   return false
 }
 
-console.log(map)
-
 
 
 console.log(containSameItem(arr1, arr2))
