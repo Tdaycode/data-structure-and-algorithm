@@ -1,4 +1,4 @@
-
+// Challenge--> checking for common items in two array
 let arr1 = ["e", "b", "c"];
 let arr2 = ["d", "j", "f"]
 let map = {
