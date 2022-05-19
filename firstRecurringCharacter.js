@@ -1,5 +1,5 @@
 let map = new Map();
-function reOcurring(arr) {
+function firstRecurringCharacter(arr) {
   for(let i =0; i < arr.length; i++) {
     console.log(map)
    if(!map.get(arr[i])) {
@@ -13,4 +13,4 @@ function reOcurring(arr) {
   
 }
 
-console.log(reOcurring([1,1]))
+console.log(firstRecurringCharacter([1,1]))
