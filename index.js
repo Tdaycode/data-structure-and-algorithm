@@ -52,35 +52,6 @@ class LinkedList {
     }
     return list
 }
-  insert(index, value){
-    if(index = 0) {
-      this.prepend(value)
-    }
-    if(index >= this.length) {
-      console.log('yes')
-      return this.append(value);
-    }
-    
-    const newNode = {
-      value: value,
-      next: null
-    }
-    const leader = this.traverseToIndex(index-1);
-    const holdingPointer = leader.next;
-    leader.next = newNode;
-    newNode.next = holdingPointer;
-    this.length++;
-    return this.printList();
-  }
-  traverseToIndex(index) {
-    let counter = 0;
-    let currentNode = this.head;
-    while(counter !== index){
-      currentNode = currentNode.next;
-      counter++;
-    }
-    return currentNode;
-  }
 }
 
 const link = new LinkedList(2)
