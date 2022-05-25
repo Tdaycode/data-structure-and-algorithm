@@ -5,6 +5,8 @@
 
 
 def find_anagrams(word):
+  if !len(word):
+    return False
     new_word = ''.join(reversed(word))
     if word == new_word:
         return True
